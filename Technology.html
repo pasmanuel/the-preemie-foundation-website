@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Slider</title>
+    <link href="./stlyesheets/styles.css" rel="stylesheet">
+    <link href="./scripts/scrip.js" rel="script">
+  <body>
+    <section class="stories">
+    
+  
+      <div class="story is-entertainment">
+        <h5>Fashion & Entertainment</h5>
+        <div class="slidder">
+          <div class="is-slide is-slide-1 is-active-slide">
+            <img class="story-image" src="./images/lamar.jpg" alt="">
+            <p class="story-details"> Kendrick Lamar Set To Release Documentary On His Time In Ghana This Week..
+              .<br><a class="is-more" href=" https://yen.com.gh/entertainment/music/208521-kendick-lamar-set-to-release-documentary-on-his-time-in-ghana-this-week/">Read More</a>
+          </div>
+          <div class="is-slide is-slide-2">
+            <img class="story-image" src="./images/sports.jpg" alt="Akrobeto">
+            <h6> Comic actor named biggest fan of Borussia Dortmund</h6>
+            <p>Actor and host of 'Real News', Akrobeto, has earned the tag 
+              as the <em>"biggest fan of BVB in all of Africa"</em> by the 
+              former Borussia Dortmund captain, Roman Weidenfeller....<br><a class='is-more' href="">Read More</a></p>
+          </div>
+          <div class="is-slide is-slide-3">
+            <img class="story-image" src="./images/gray.jpg" alt="Fashion Image">
+            <h6> 10 trendiest fashion displayed by celebrities this week</h6>
+            <p>Week in and out fans wait on their favourite celebrities 
+              to share their popular fashionable styles with them so they 
+              can pick some ideas...<br><a class='is-more' href="">Read More</a></p>
+                    
+          </div>
+        </div>
+          
+      </div>
+      <!--sports-->
+      <div class="story is-sports">
+        <h5>Sports</h5>
+        <div class="islidder">
+          <div class="iis-slide iis-slide-1 iis-active-slide">
+            <img class="story-image" src="./images/Marcello.jpg" alt="">
+            <p class="story-details"> Marcelo: Real Madrid defender tears up during 
+              farewell speech..<br><a class="is-more" href="">Read More</a></p>
+          </div>
+          <div class="iis-slide iis-slide-2">
+            <img class="story-image" src="./images/sports.jpg" alt="Akrobeto">
+            <h6> Comic actor named biggest fan of Borussia Dortmund</h6>
+            <p>Actor and host of 'Real News', Akrobeto, has earned the tag 
+              as the <em>"biggest fan of BVB in all of Africa"</em> by the 
+              former Borussia Dortmund captain, Roman Weidenfeller....<br><a class='is-more' href="">Read More</a></p>
+          </div>
+          <div class="iis-slide iis-slide-3">
+            <img class="story-image" src="./images/gray.jpg" alt="Fashion Image">
+            <h6> 10 trendiest fashion displayed by celebrities this week</h6>
+            <p>Week in and out fans wait on their favourite celebrities 
+              to share their popular fashionable styles with them so they 
+              can pick some ideas...<br><a class='is-more' href="">Read More</a></p>
+                    
+          </div>
+        </div>
+       
+      </div>
+      <!--Technology-->
+      <div class="story is-technology"> 
+        <h5>Technology</h5>
+        <div class="wslidder">
+          <div class="wis-slide wis-slide-1 wis-active-slide">
+           <img class="story-image" src="./images/ai.jpg" alt="">
+           <p class="story-details">Google engineer says Lamda AI
+           system may have its own feelings ..<br><a class='is-more' href="">Read More</a></p>
+          </div>
+          <div class="wis-slide wis-slide-2">
+            <img class="story-image" src="./images/sports.jpg" alt="Akrobeto">
+            <h6> Comic actor named biggest fan of Borussia Dortmund</h6>
+            <p>Actor and host of 'Real News', Akrobeto, has earned the tag 
+              as the <em>"biggest fan of BVB in all of Africa"</em> by the 
+              former Borussia Dortmund captain, Roman Weidenfeller....<br><a class='is-more' href="">Read More</a></p>
+          </div>
+          <div class="wis-slide wis-slide-3">
+            <img class="story-image" src="./images/gray.jpg" alt="Fashion Image">
+            <h6> 10 trendiest fashion displayed by celebrities this week</h6>
+            <p>Week in and out fans wait on their favourite celebrities 
+              to share their popular fashionable styles with them so they 
+              can pick some ideas...<br><a class='is-more' href="">Read More</a></p>
+                    
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <script type="text/javascript">
+      const slides = Array.from(document.querySelectorAll('.slidder .is-slide'));
+
+		function goToNextSlide() {
+			const activeSlide = document.querySelector('.slidder .is-slide.is-active-slide');
+
+			const index = slides.indexOf(activeSlide);
+
+			activeSlide.classList.remove('is-active-slide');
+
+			if(index == slides.length-1) {
+				slides[0].classList.add('is-active-slide');
+			} else {
+				slides[index+1].classList.add('is-active-slide');
+			}
+		}
+
+		function goToPreviousSlide() {}
+
+		setInterval(goToNextSlide, 5000);
+
+  </script>
+  <script type="text/javascript"> 
+    const islides = Array.from(document.querySelectorAll('.islidder .iis-slide'));
+
+		function igoToNextSlide() {
+			const iactiveSlide = document.querySelector('.islidder .iis-slide.iis-active-slide');
+
+			const iindex = islides.indexOf(iactiveSlide);
+
+			iactiveSlide.classList.remove('iis-active-slide');
+
+			if(iindex == islides.length-1) {
+				islides[0].classList.add('iis-active-slide');
+			} else {
+				islides[iindex+1].classList.add('iis-active-slide');
+			}
+		}
+
+		function igoToPreviousSlide() {}
+
+		setInterval(igoToNextSlide, 5000);
+  </script>
+  <script>
+
+    const wslides = Array.from(document.querySelectorAll('.wslidder .wis-slide'));
+
+		function wgoToNextSlide() {
+			const wactiveSlide = document.querySelector('.wslidder .wis-slide.wis-active-slide');
+
+			const windex = wslides.indexOf(wactiveSlide);
+
+			wactiveSlide.classList.remove('wis-active-slide');
+
+			if(windex == wslides.length-1) {
+				wslides[0].classList.add('wis-active-slide');
+			} else {
+				wslides[windex+1].classList.add('wis-active-slide');
+			}
+		}
+
+		function wgoToPreviousSlide() {}
+
+		setInterval(wgoToNextSlide, 5000);
+    </script>
+
+  </body>
+</html>

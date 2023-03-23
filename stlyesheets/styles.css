@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+*{
+ 
+  margin: 0px
+}
+.is-header{
+
+  display: flex;
+  justify-content: space-between;
+  background-color: #4c0178;
+  box-shadow: 0px 0px 7px 1px black;
+  position: fixed;
+  width:100%;
+  z-index: 90000;
+}
+#flex{
+  display:flex;
+  padding: 5px;
+  margin-left: 15px;
+}
+
+h1,
+h3{
+  font-family: "Yeseva One", cursive;
+  padding: 5px;
+  color:gold;
+  text-shadow: 1px 2px 2px black;
+}
+body {
+  /* Created with https://www.css-gradient.com */
+  background: #4c0178;
+  background: -webkit-linear-gradient(bottom, #4c0178, #FFFFFF);
+  background: -moz-linear-gradient(bottom, #4c0178, #FFFFFF);
+  background: linear-gradient(to top, #4c0178, #FFFFFF);
+  color: white;
+  
+  font-family: sans-serif;
+  position:relative;
+}
+.header-nav,
+a.list-item{
+  font-weight:500;
+  font-size:15px;  
+  color:#FAF9F6;
+  display: flex;
+  display: inline;
+  float: left;
+  padding: 8px;
+  margin: 2px;
+  justify-content:  center;
+  text-decoration: none;
+  
+
+}
+a.list-item:hover {
+  color: #000126;
+  background-color: gold;
+  border-radius: 5px;
+}
+a.is-name{
+  font-family: "Yeseva One", cursive;
+  padding: 5px;
+  color:gold;
+  text-shadow: 1px 2px 2px black;
+  text-decoration: none;
+}
+a.is-name:hover {
+  color:#4c0178 ;
+  background-color:gold ;
+  border-radius: 5px;
+}
+section .is-nav{
+  width: 100%;
+  display: flex;
+ 
+}
+section.background{
+  height: 500px;
+}
+nav{
+ 
+  justify-content:center;
+  margin-right: 15px;
+}
+#is-background{
+  width: 100%;
+  height: 150px;
+  margin-right:50px;
+}
+#is-logo{
+  width:50px;
+  height:50px;
+  float:left;
+}
+main{
+ font-size: 50;
+ padding: 25px;
+ background-color:white;
+ 
+}
+.background{
+  display: flex;
+  margin-top: 4px;
+  margin-right: 0px;
+  position: relative;
+  height: 400px;
+  background-image: url(../images/R.jpg);
+  justify-content: space-between;
+ 
+}
+
+form {
+  display:block;
+}
+.is-contact{
+  border: 1px solid white;
+  border-radius:5px;
+}
+form > div {
+  display:flex;
+  margin-top: 30px;
+  position: relative;
+  z-index: 5000;
+  margin-right: 10px;
+  margin-top:70px;
+
+}
+label{
+  display: flex;
+  border-radius:15px;
+  font-size:30px;
+  justify-content: center;
+  padding:0px;
+}
+input{
+  border-radius:15px;
+  margin:0px;
+  background-color:transparent;
+  color:white;
+  border-color:silver;
+}
+.search{
+  background-color: #2F4F4F ;
+}
+h3.in-background{
+  font-family: "Yeseva One", cursive;
+  font-size: 49px;
+  display:block;
+}
+p.in-background{
+  font-size: 15px;
+  font-family: sans-serif;
+
+}
+.is-more{
+  font-size: 13px;
+  text-decoration: none;
+  color: gold;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding:3px;
+  margin-top: 3px;
+}
+.is-more:hover {
+  color: #000126;
+  background-color: gold;
+  border-radius: 5px;
+}
+div.in-background{
+  display:inline;
+  justify-content:center;
+  align-items:center;
+  margin:30px;
+  background-color: rgba(68, 0, 104,0.5);
+  padding: 10px;
+  z-index: 50000;
+  margin-top: 70px;
+
+
+}
+
+.slider-container {
+  height: 470px;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 60px;
+}
+.menu {
+  position: absolute;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  bottom: 0;
+}
+.menu label {
+  cursor: pointer;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: transparent;
+  border-radius: 50px;
+  border: solid 1px silver;
+  margin: 0 0.2em 1em;
+}
+.menu label:hover,
+.menu label:focus {
+  background: #1c87c9;
+}
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  padding: 8em 1em 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: left 0s 0.75s;
+  
+}
+[id^="slide"]:checked + .slide {
+  left: 0;
+  z-index: 100;
+  transition: left 0.65s ease-out;
+}
+.slide-1 {
+  background-image: url("../images/Got-Talent.jpg");
+}
+.slide-2 {
+  background-image: url("../images/cycling.jpg");
+}
+.slide-3 {
+  background-image: url("../images/cricket.jpg");
+}
+.stories,
+.must-read,
+.is-video{
+  margin-top:10px;
+  display:flex;
+  justify-content: space-around;
+  background: rgba(240, 243, 243,0.5);
+  padding:15px;
+  overflow:hidden;
+}
+.story{
+  width:30%;
+  background: rgba(1, 51, 75, 0.5);
+  overflow:hidden;
+  padding: 10px;
+  border-radius:5px;
+  position:relative;
+  height: 473px;
+
+  
+}
+.story-image{
+  width: 385px;
+  height: 250px;
+  border-radius:5px;
+  
+}
+h3, h5{
+  margin:10px 0px;
+  margin-bottom: 5px;
+  text-align:center; 
+  font-family: "Yeseva One", cursive;
+}
+h3{
+  font-size:35px;
+}
+h5{
+  font-size:30px;
+}
+.slidder{
+  display: flex;
+}
+.is-slide{
+  margin-right:5px;
+  transition: ease 1s;
+  opacity: 0;
+  position: absolute;
+  display:flex;
+  flex-direction:column;
+
+}
+.is-active-slide{
+  position:relative;
+  opacity: 1;
+
+}
+.islidder{
+  display: flex;
+}
+ .iis-slide{
+  margin-right:5px;
+  transition: ease 1s;
+  opacity: 0;
+  position: absolute;
+  display:flex;
+  flex-direction:column;
+
+}
+.iis-active-slide{
+  position:relative;
+  opacity: 1;
+
+}
+.wslidder{
+  display: flex;
+}
+.wis-slide{
+  margin-right:5px;
+  transition: ease 1s;
+  opacity: 0;
+  position: absolute;
+  display:flex;
+  flex-direction:column;
+
+}
+.wis-active-slide{
+  position:relative;
+  opacity: 1;
+
+}
+h6{
+  margin:3px;
+  font-size: medium;
+}
+p{
+  font-family:Helvetica;
+  font-size: medium;
+  line-height: 2;
+}
+.image-read{
+  width:98%;
+  margin-right:10px;
+  border-radius:5px;
+  background:rgba(77, 0, 104, 0.5);
+  text-align: justify;
+}
+.Author{
+  margin: 10px 0px 5px 0px;
+  padding: 5px;
+}
+.synopsis{
+  background:rgba(77, 0, 104, 0.5);
+  width: 70%;
+  border-radius:5px;
+  padding: 10px;
+}
+.book-image{
+  padding:10px;
+}
+.video-cage{
+  background:rgba(77, 0, 104, 0.5);
+  border-radius:5px;
+  padding: 10px;
+}
+/* .dbg {
+  border: solid red 2px;
+} */
+.footer-nav{
+  display:flex;
+  justify-content: space-evenly;
+}
+.nav-im a{
+  text-decoration: none;
+  color: #000126;
+  font-size: small;
+}
+.nav-im a:hover{
+   color: white;
+}
+.nav-im{
+  list-style-type: none;
+  line-height: 1.8;
+}
