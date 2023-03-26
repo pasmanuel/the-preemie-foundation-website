@@ -4,7 +4,6 @@
   margin: 0px
 }
 .is-header{
-
   display: flex;
   justify-content: space-between;
   background-color: #4c0178;
@@ -227,13 +226,13 @@ div.in-background{
   transition: left 0.65s ease-out;
 }
 .slide-1 {
-  background-image: url("../images/Got-Talent.jpg");
+  background-image: url("../images/orphanage.jpg");
 }
 .slide-2 {
-  background-image: url("../images/cycling.jpg");
+  background-image: url("../images/orphanage2.jpg");
 }
 .slide-3 {
-  background-image: url("../images/cricket.jpg");
+  background-image: url("../images/orphanage3.jpg");
 }
 .stories,
 .must-read,
@@ -260,23 +259,26 @@ div.in-background{
   width: 385px;
   height: 250px;
   border-radius:5px;
-  
 }
+
 h3, h5{
   margin:10px 0px;
   margin-bottom: 5px;
   text-align:center; 
   font-family: "Yeseva One", cursive;
 }
+
 h3{
   font-size:35px;
 }
 h5{
   font-size:30px;
 }
+
 .slidder{
   display: flex;
 }
+
 .is-slide{
   margin-right:5px;
   transition: ease 1s;
@@ -311,17 +313,18 @@ h5{
 .wslidder{
   display: flex;
 }
+
 .wis-slide{
   margin-right:5px;
   transition: ease 1s;
   opacity: 0;
-  position: absolute;
+  position:absolute;
   display:flex;
   flex-direction:column;
 
 }
 .wis-active-slide{
-  position:relative;
+  position:flex;
   opacity: 1;
 
 }
@@ -358,10 +361,10 @@ p{
   background:rgba(77, 0, 104, 0.5);
   border-radius:5px;
   padding: 10px;
-}
-/* .dbg {
+}/*
+ .dbg {
   border: solid red 2px;
-} */
+}*/
 .footer-nav{
   display:flex;
   justify-content: space-evenly;
